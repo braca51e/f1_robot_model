@@ -8,14 +8,14 @@ def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='f1_robot_model').find('f1_robot_model')
     default_model_path = os.path.join(pkg_share, 'urdf/racecar.urdf')
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
-    world_path=os.path.join(pkg_share, 'world/empty_world.sdf')
+    world_path=os.path.join(pkg_share, 'world/empty_world_racing.sdf')
     use_sim_time = LaunchConfiguration('use_sim_time') 
 
     # Position and orientation
     # [X, Y, Z]
-    position = [0.0, 0.0, 0.0]
+    position = [6.5, 0.0, 0.0]
     # [Roll, Pitch, Yaw]
-    orientation = [0.0, 0.0, 0.0]
+    orientation = [0.0, 0.0, 1.57]
     
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         name='use_sim_time',

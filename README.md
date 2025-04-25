@@ -9,6 +9,7 @@ sudo apt install ros-<ros2-distro>-joint-state-publisher-gui
 sudo apt install ros-<ros2-distro>-xacro
 sudo apt install ros-<ros2-distro>-gazebo-ros-pkgs
 sudo apt install ros-<ros2-distro>-ackermann-msgs
+sudo apt install ros-<ros2-distro>-imu-tools  # For IMU visualization and tools
 ```
 
 ## Run Locally
